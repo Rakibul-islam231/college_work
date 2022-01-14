@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/**banner  part start**/
+.banner_img{
+    background: url(../img/story\ \ banner.jpg);
+    height: 490px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    object-fit: cover;
+}
+.banner_img::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+.banner_img h2{
+    font-size: 72px;
+    font-family: Cormorant Garamond;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    transform: translateY(200px);
+}
+/**banner part end**/
+
